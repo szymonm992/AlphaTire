@@ -449,8 +449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MotionType: 0
-  m_Smoothing: 0
-  m_Mass: 50
+  m_Smoothing: 1
+  m_Mass: 40
   m_LinearDamping: 0.2
   m_AngularDamping: 0.2
   m_InitialLinearVelocity:
@@ -510,9 +510,9 @@ MonoBehaviour:
     y: 0
     z: 0
   TargetDistance: 0
-  MaxImpulseAppliedByMotor: 1200
+  MaxImpulseAppliedByMotor: 800
   SpringFrequency: 100000
-  SpringDampening: 1000
+  SpringDampening: 500
 --- !u!1 &1480961462974377203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,8 +1692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MotionType: 0
-  m_Smoothing: 0
-  m_Mass: 50
+  m_Smoothing: 1
+  m_Mass: 40
   m_LinearDamping: 0.2
   m_AngularDamping: 0.2
   m_InitialLinearVelocity:
@@ -1753,9 +1753,9 @@ MonoBehaviour:
     y: 0
     z: 0
   TargetDistance: 0
-  MaxImpulseAppliedByMotor: 1200
+  MaxImpulseAppliedByMotor: 800
   SpringFrequency: 100000
-  SpringDampening: 1000
+  SpringDampening: 500
 --- !u!1 &4893388386180736006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2159,7 +2159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MotionType: 0
-  m_Smoothing: 0
+  m_Smoothing: 1
   m_Mass: 3360
   m_LinearDamping: 0.1
   m_AngularDamping: 0.1
@@ -2890,8 +2890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MotionType: 0
-  m_Smoothing: 0
-  m_Mass: 50
+  m_Smoothing: 1
+  m_Mass: 40
   m_LinearDamping: 0.2
   m_AngularDamping: 0.2
   m_InitialLinearVelocity:
@@ -2951,9 +2951,9 @@ MonoBehaviour:
     y: 0
     z: 0
   TargetDistance: 0
-  MaxImpulseAppliedByMotor: 1200
+  MaxImpulseAppliedByMotor: 800
   SpringFrequency: 100000
-  SpringDampening: 1000
+  SpringDampening: 500
 --- !u!1 &6412366458677151571
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,8 +3394,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MotionType: 0
-  m_Smoothing: 0
-  m_Mass: 50
+  m_Smoothing: 1
+  m_Mass: 40
   m_LinearDamping: 0.2
   m_AngularDamping: 0.2
   m_InitialLinearVelocity:
@@ -3455,9 +3455,9 @@ MonoBehaviour:
     y: 0
     z: 0
   TargetDistance: 0
-  MaxImpulseAppliedByMotor: 1200
+  MaxImpulseAppliedByMotor: 800
   SpringFrequency: 100000
-  SpringDampening: 1000
+  SpringDampening: 500
 --- !u!1 &7143735152827877373
 GameObject:
   m_ObjectHideFlags: 0
