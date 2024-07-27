@@ -9,8 +9,7 @@ using AlphaTire.Components;
 namespace AlphaTire.Systems
 {
     [BurstCompile]
-    [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
-    [UpdateAfter(typeof(PhysicsSystemGroup))]
+    [UpdateInGroup(typeof(PhysicsSimulationGroup))]
     public partial struct TireCollisionSystem : ISystem
     {
         [BurstCompile]

@@ -512,7 +512,7 @@ MonoBehaviour:
   TargetDistance: 0
   MaxImpulseAppliedByMotor: 1000
   SpringDampeningRatio: 0.5
-  TauCosntraint: 0.8
+  TauConstraint: 0.6
   Iterations: 12
 --- !u!1 &1480961462974377203
 GameObject:
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   TargetDistance: 0
   MaxImpulseAppliedByMotor: 1000
   SpringDampeningRatio: 0.5
-  TauCosntraint: 0.8
+  TauConstraint: 0.6
   Iterations: 12
 --- !u!1 &4893388386180736006
 GameObject:
@@ -2955,7 +2955,7 @@ MonoBehaviour:
   TargetDistance: 0
   MaxImpulseAppliedByMotor: 1000
   SpringDampeningRatio: 0.5
-  TauCosntraint: 0.8
+  TauConstraint: 0.6
   Iterations: 12
 --- !u!1 &6412366458677151571
 GameObject:
@@ -3460,7 +3460,7 @@ MonoBehaviour:
   TargetDistance: 0
   MaxImpulseAppliedByMotor: 1000
   SpringDampeningRatio: 0.5
-  TauCosntraint: 0.8
+  TauConstraint: 0.6
   Iterations: 12
 --- !u!1 &7143735152827877373
 GameObject:
