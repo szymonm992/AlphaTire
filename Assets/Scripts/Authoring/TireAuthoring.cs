@@ -16,7 +16,7 @@ namespace AlphaTire.Authoring
         [Range(0.0f, 1.0f)]
         public float SpringDampeningRatio = 0.7f;
         [Range(0.0f, 1.0f)]
-        public float TauCosntraint = 0.6f;
+        public float TauConstraint = 0.6f;
         [Range(2f, 20f)]
         public int Iterations = 8;
 
@@ -61,7 +61,7 @@ namespace AlphaTire.Authoring
                 );
 
                 var constrains = joint.GetConstraints();
-                JacobianCalculateSpringFrequencyAndDamping(authoring.TauCosntraint, authoring.SpringDampeningRatio, math.rcp(60.0f), authoring.Iterations, out var SpringFrequency, out var DampingRatio);
+                JacobianCalculateSpringFrequencyAndDamping(authoring.TauConstraint, authoring.SpringDampeningRatio, math.rcp(60.0f), authoring.Iterations, out var SpringFrequency, out var DampingRatio);
                 Debug.Log($"Calculated spring frequency: {SpringFrequency} damping: {DampingRatio}");
 
                 var motorPlanarConstraint = new Constraint

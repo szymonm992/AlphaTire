@@ -21,6 +21,10 @@ namespace AlphaTire.Systems
             var colliderLookupHandle = SystemAPI.GetComponentLookup<PhysicsCollider>(true);
             var entityCommandBuffer = new EntityCommandBuffer(Allocator.TempJob);
 
+            var resetPropertiesJob = new ResetTireDataJob();
+            state.Dependency = resetPropertiesJob.Schedule(state.Dependency);
+            state.Dependency.Complete();
+
             var detectTireCollisionsJob = new TireCollisionEventJob
             {
                 PhysicsWorld = physicsWorld,
@@ -37,6 +41,18 @@ namespace AlphaTire.Systems
         }
 
         [BurstCompile]
+        [WithAll(typeof(Simulate))]
+        private partial struct ResetTireDataJob : IJobEntity
+        {
+            [BurstCompile]
+            public void Execute(ref TireData tireData)
+            {
+                UpdateTireProperties(ref tireData, false, default, math.up(), math.forward());
+            }
+        }
+
+        [BurstCompile]
+        [WithAll(typeof(Simulate))]
         private struct TireCollisionEventJob : ICollisionEventsJob
         {
             [ReadOnly] public PhysicsWorld PhysicsWorld;
@@ -68,19 +84,11 @@ namespace AlphaTire.Systems
                     }
                     else
                     {
-                        UpdateTireProperties(ref tireProperties, false, default, contactNormal, contactSurfaceVector);
+                        UpdateTireProperties(ref tireProperties, false, default, math.up(), math.forward());
                     }
 
                     TireDataLookup[tireEntity] = tireProperties;
                 }
-            }
-
-            [BurstCompile]
-            private void UpdateTireProperties(ref TireData tireData, bool hasContact, NativeArray<float3> contactPoints, float3 contactNormal, float3 contactSurfaceVector)
-            {
-                tireData.ContactSurfaceNormal = contactNormal;
-                tireData.IsGrounded = hasContact;
-                tireData.ContactSurfaceVector = contactSurfaceVector;
             }
 
             [BurstCompile]
@@ -89,6 +97,14 @@ namespace AlphaTire.Systems
             {
                 return (DataComponentLookup.HasComponent(firstEntity), DataComponentLookup.HasComponent(secondEntity));
             }
+        }
+
+        [BurstCompile]
+        public static void UpdateTireProperties(ref TireData tireData, bool hasContact, NativeArray<float3> contactPoints, float3 contactNormal, float3 contactSurfaceVector)
+        {
+            tireData.ContactSurfaceNormal = contactNormal;
+            tireData.IsGrounded = hasContact;
+            tireData.ContactSurfaceVector = contactSurfaceVector;
         }
     }
 }
