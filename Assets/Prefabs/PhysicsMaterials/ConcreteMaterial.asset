@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79f877434772c463192af154345455c9, type: 3}
-  m_Name: TireMaterial
+  m_Name: ConcreteMaterial
   m_EditorClassIdentifier: 
   m_Value:
     m_SupportsTemplate: 0
     m_Template: {fileID: 0}
     m_CollisionResponse:
       m_Override: 1
-      m_Value: 1
+      m_Value: 0
     m_Friction:
       m_Override: 1
       m_Value:
-        Value: 0.3
+        Value: 1
         CombineMode: 0
     m_Restitution:
       m_Override: 1
