@@ -767,45 +767,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 38656809281161920, guid: bea13f0076ac88d4f8b39b72bbb6d543,
-        type: 3}
-      propertyPath: m_InitialLinearVelocity.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 38656809281161920, guid: bea13f0076ac88d4f8b39b72bbb6d543,
-        type: 3}
-      propertyPath: m_InitialLinearVelocity.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 38656809281161920, guid: bea13f0076ac88d4f8b39b72bbb6d543,
-        type: 3}
-      propertyPath: m_InitialAngularVelocity.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2727178476120590324, guid: bea13f0076ac88d4f8b39b72bbb6d543,
-        type: 3}
-      propertyPath: m_Mass
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145337730141564816, guid: bea13f0076ac88d4f8b39b72bbb6d543,
-        type: 3}
-      propertyPath: m_Mass
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 5978680110334807242, guid: bea13f0076ac88d4f8b39b72bbb6d543,
         type: 3}
       propertyPath: m_Name
       value: Military Truck
-      objectReference: {fileID: 0}
-    - target: {fileID: 8183431172360858869, guid: bea13f0076ac88d4f8b39b72bbb6d543,
-        type: 3}
-      propertyPath: m_Mass
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8346853123332782842, guid: bea13f0076ac88d4f8b39b72bbb6d543,
-        type: 3}
-      propertyPath: m_Mass
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8772091258176817935, guid: bea13f0076ac88d4f8b39b72bbb6d543,
         type: 3}
